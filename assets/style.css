@@ -1,0 +1,140 @@
+:root{
+    --blue: #0B5A6F;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: azure;
+    
+}
+
+.container{
+    position: relative;
+    width: 100%;
+}
+
+.sidebar{
+    width: 318px;
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    background-color: var(--blue);
+}
+
+.sidebar-top{
+    width: 318px;
+    height: 211px;
+    flex-shrink: 0;
+}
+
+
+
+.navicon {
+    display: inline-block;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    overflow: hidden;
+    width: 100px; /* You can adjust the width as needed */
+    /* Add any additional styles you want */
+}
+
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 318px;
+    background-color: #0B5A6F;
+}
+
+li a{
+    display: block;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+ 
+
+li a:hover{
+    background-color: #cfe3ea5d;
+    color: rgb(0, 0, 0)
+}
+
+.main_top {
+    padding-top: 37px;
+    padding-bottom: 0px; /* Adjust as needed */
+    padding-left: 15px;
+}
+
+.title {
+    padding-left: 12px; /* Adjust as needed */
+    padding-top: 35px;
+    padding-right: 1300px;
+    background: #EAEDF1;
+    color: #000;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: auto; /* Aligns the title to the right */
+}
+
+
+.main {
+    background: #EAEDF1;
+    /* Add any other styles you need for .main */
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    padding: 10px; /* Add padding as needed */
+}
+
+.main_top {
+    padding-right: 10px; /* Add padding as needed */
+}
+
+.title {
+    flex: 1; /* Allow the title to take up remaining space */
+    text-align: center; /* Center-align the title */
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: normal;
+    color: #000;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    margin-right: 10px; /* Add margin as needed */
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: normal;
+    color: #000;
+}
+
+.icon {
+    width: 61px;
+    height: 57px;
+    /* Add any other styles you need for the icon */
+}
