@@ -59,6 +59,9 @@ ul{
     padding: 0;
     width: 318px;
     background-color: #0B5A6F;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
 }
 
 li a{
@@ -74,67 +77,61 @@ li a:hover{
     color: rgb(0, 0, 0)
 }
 
-.main_top {
-    padding-top: 37px;
-    padding-bottom: 0px; /* Adjust as needed */
-    padding-left: 15px;
+.main{
+    left: 318px;
+    width: 800px;
+    height: 839px;
+    position:relative;
+
 }
 
-.title {
-    padding-left: 12px; /* Adjust as needed */
-    padding-top: 35px;
-    padding-right: 1300px;
-    background: #EAEDF1;
+.main .top{
+    top: 30px;
+    display: inline-flex;
+}
+
+.lefticon{
+    width: 45px;
+    height: 41px;
+    flex-shrink: 0;
+
+}
+
+.leftfont{
+    width: 133px;
+    height: 21px;
+    flex-shrink: 0;
     color: #000;
     font-family: Inter;
     font-size: 22px;
+    font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-left: auto; /* Aligns the title to the right */
+    padding-top: 8px;
 }
 
-
-.main {
-    background: #EAEDF1;
-    /* Add any other styles you need for .main */
+.leftfont, .lefticon{
+    padding-left: 20px ;
 }
 
-.topbar {
-    display: flex;
-    align-items: center;
-    padding: 10px; /* Add padding as needed */
+.right{
+    box-align: right;
+    right: 32px;
 }
 
-.main_top {
-    padding-right: 10px; /* Add padding as needed */
-}
-
-.title {
-    flex: 1; /* Allow the title to take up remaining space */
-    text-align: center; /* Center-align the title */
+.rightuser{
+    width: 169px;
+    height: 27px;
+    color: #000;
+    text-align: right;
     font-family: Inter;
     font-size: 22px;
+    font-style: normal;
     font-weight: 400;
     line-height: normal;
-    color: #000;
 }
 
-.user {
-    display: flex;
-    align-items: center;
-}
-
-.name {
-    margin-right: 10px; /* Add margin as needed */
-    font-family: Inter;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: normal;
-    color: #000;
-}
-
-.icon {
+.righticon{
     width: 61px;
     height: 57px;
-    /* Add any other styles you need for the icon */
 }
