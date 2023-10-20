@@ -38,6 +38,9 @@ body{
     flex-shrink: 0;
 }
 
+.nav{
+
+}
 
 
 .navicon {
@@ -63,6 +66,8 @@ ul{
     position: fixed;
     overflow: auto;
 }
+
+
 
 li a{
     display: block;
@@ -94,6 +99,7 @@ li a:hover{
     width: 45px;
     height: 41px;
     flex-shrink: 0;
+    padding-top: 8px;
 
 }
 
@@ -107,31 +113,284 @@ li a:hover{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-top: 8px;
+    padding-top: 10px;
 }
 
 .leftfont, .lefticon{
     padding-left: 20px ;
 }
-
-.right{
-    box-align: right;
-    right: 32px;
+/* Define a container for the user information */
+.user-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 860px;
+    display: flex;
+    align-items: right;
+    
 }
 
-.rightuser{
+/* Define styles for the user name */
+.rightuser {
     width: 169px;
     height: 27px;
     color: #000;
     text-align: right;
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 10px; /* Add margin for spacing between user icon and user name */
+}
+
+/* Define styles for the user icon */
+.righticon {
+    width: 55px;
+    height: 50px;
+}
+.title{
+    left: 412px;
+    text-align: center;
+    color: #0B5A6F;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    }
+
+.display-info{
+    position: absolute;
+    display: flex;
+    left: 59px;
+    top: 160px;
+    width: 517px;
+    height: 245px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 10px;
+    padding-top:  10px;
+}
+
+.display-info .info-list{
+    list-style-type: none;
+    margin: 0;
+    
+    width: 318px;
+    background-color: #ffffff;
+    position: relative;
+    text-align: justify;
+    line-height: 50px;
+}
+
+.Status{
+    display: inline-flex;
+    text-align: center;
+    position: relative;
+    width: 115px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: rgba(210, 214, 25, 0.28);
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.status-info{
+    text-align: center;
+    left: 3px;
+    right: 3px;
+    color: #FF0101;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.bottom-info{
+    top: 483px;
+    left: 57px;
+    width: 753px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #718E96;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: absolute;
+}
+.textbottom{
+    color: #FFF;
     font-family: Inter;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding-left: 25px;
+
+}
+.number{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400; 
+    border-radius: 10px;
+    line-height: normal;
+    
 }
 
-.righticon{
-    width: 61px;
-    height: 57px;
+.button{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    position: relative;
+    flex-shrink: 0;
+    text-align:right;
+    width: 60px;
+    height: 24px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background: #AAD4E1;
+    padding-left: 200px;
+}
+.button-info{
+    text-align: center;
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+
+.bottom2-info{
+    top: 561px;
+    left: 57px;
+    bottom: 226px;
+    width: 753px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #5397A9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: absolute;
+}
+
+.info-box{
+    position: absolute;
+    left: 57px;
+    width: 753px;
+    height: 50px;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 6px;
+}
+
+.comp{
+    top: 483px;
+    background: #718E96;
+
+}
+
+.intv{
+    top: 561px;
+    background: #5397A9;
+
+}
+
+/*.bottom{
+    display: inline;
+    top : 561px !important;
+    position: absolute;
+    display: flex;
+    padding-left: 57px;
+}
+*/
+
+.appl-info{
+    left: 375px;
+    top: 462px;
+    max-width: 753px;
+    display: flex;
+    position: absolute;
+}
+
+.comp-appl{
+    width: 753px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #718E96;
+    position: relative;
+    align-items: center;
+}
+
+.comp-appl .text{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 25px;
+}
+
+.comp-appl .num{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 40px; 
+    border-radius: 10px;
+    line-height: normal;
+    padding-right: 200px; 
+    padding-left: 200px;
+}
+
+.intv-schedule{
+    width: 753px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #5397A9;
+}
+
+.intv-schedule .text{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 25px;
+}
+
+.intv-schedule .num{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 40px; 
+    border-radius: 10px;
+    line-height: normal;
+    padding-right: 200px; 
+    padding-left: 200px;
 }
