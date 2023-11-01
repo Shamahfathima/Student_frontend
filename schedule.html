@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/style.css" class="rel">
-    <link rel="stylesheet" href="/assets/sidebar.css">
+    <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="st.css">
+    <link rel="stylesheet" href="assets/sidebar.css">
+    <link rel="stylesheet" href="assets/schedule.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <title>Interviews</title>
+    <title>Schedule</title>
 </head>
 <body>
     <div class="container">
@@ -62,13 +63,87 @@
     
         <div class="main">
             <header class="top-bar">
-                <div class="title">Interviews Scheduled</div>
+                <div class="title">Schedule</div>
                 <div class="user-profile">
                     <div class="username">Shamah</div>
                     <a href="profile.html"><img class="avatar" src="/assets/shamah.png" alt="User Avatar"></a>
                 </div>
             </header>
+
+            <div class="schedule-container">
+                <table id="scheduleTable" class="scheduleTable">
+                    <thead>
+                        <tr>
+                            <th>Company Name</th>
+                            <th>Topic</th>
+                            <th>Date</th>
+                            <th>Venue</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody id="scheduleData" class="scheduleData">
+                        <!-- Data will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+            
         </div>
     </div>
+
+    <script>
+        // Mockup data (replace this with actual data retrieval logic)
+const techTalkSessions = [
+    {
+        companyName: 'CodeGen',
+        topic: 'Artificial Intelligence in Business',
+        date: '2023-11-15',
+        venue: 'S104',
+        time: '10:00 AM - 12:00 PM'
+    },
+    {
+        companyName: 'SyscoLabs',
+        topic: 'Data Privacy and Security',
+        date: '2023-11-18',
+        venue: 'E401',
+        time: '2:00 PM - 4:00 PM'
+    },
+    {
+        companyName: 'WSO2',
+        topic: 'Data Privacy and Security',
+        date: '2023-11-18',
+        venue: 'W002',
+        time: '2:00 PM - 4:00 PM'
+    },
+    {
+        companyName: 'Virtusa',
+        topic: 'Data Privacy and Security',
+        date: '2023-11-18',
+        venue: 'S203',
+        time: '2:00 PM - 4:00 PM'
+    },
+    
+];
+
+// Function to populate the table with data
+function populateScheduleTable(data) {
+    const tableBody = document.getElementById('scheduleData');
+
+    data.forEach(session => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${session.companyName}</td>
+            <td>${session.topic}</td>
+            <td>${session.date}</td>
+            <td>${session.venue}</td>
+            <td>${session.time}</td>
+        `;
+        tableBody.appendChild(row);
+    });
+}
+
+// Populate the table with mock data
+populateScheduleTable(techTalkSessions);
+
+    </script>
 </body>
 </html>
