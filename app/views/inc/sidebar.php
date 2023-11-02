@@ -2,37 +2,37 @@
             <img src = "assets/InternEaseLogo.png" alt="">
             <ul>
                 <li>
-                    <a href="dashboard.html">
+                    <a href="<?=ROOT?>/dashboard">
                         <span class="icon"><i class="fa-solid fa-gauge-high"></i></span>
                         <span class="title">Dashboard</span>
                     </a>
                 </li>
                 <li>
-                    <a href="advertisements.html">
+                    <a href="<?=ROOT?>/advertisements">
                         <span class="icon"><i class="fa-solid fa-rectangle-ad"></i></span>
                         <span class="title">Advertisements</span>
                     </a>
                 </li>
                 <li>
-                    <a href="complaints.html">
+                    <a href="<?=ROOT?>/complaints">
                         <span class="icon"><i class="fa-solid fa-circle-question"></i></span>
                         <span class="title">Complaints</span>
                     </a>
                 </li>
                 <li>
-                    <a href="profile.html">
+                    <a href="<?=ROOT?>/profile">
                         <span class="icon"><i class="fa-solid fa-user"></i></span>
                         <span class="title">Profile</span>
                     </a>
                 </li>
                 <li>
-                    <a href="schedule.html">
+                    <a href="<?=ROOT?>/schedule">
                         <span class="icon"><i class="fa-solid fa-calendar-days"></i></span>
                         <span class="title">Schedule</span>
                     </a>
                 </li>
                 <li>
-                    <a href="selectionList.html">
+                    <a href="<?=ROOT?>/selectionList">
                         <span class="icon"><i class="fa-solid fa-rectangle-list"></i></ion-icon></span>
                         <span class="title">Selection List</span>
                     </a>
