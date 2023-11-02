@@ -1,4 +1,4 @@
-<?php require_once("../inc/header.php"); ?>
+<?php require_once("../app/views/inc/header.php"); ?>
 
 <div class="container">
         <div class="navigation">
@@ -196,4 +196,4 @@ const adTypesChart = new Chart(document.getElementById('adTypesChart').getContex
 
     </script>
 
-<?php require_once("../inc/footer.php"); ?>
+<?php require_once("../app/views/inc/footer.php"); ?>
