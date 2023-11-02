@@ -1,5 +1,5 @@
 <?php
 
-require_once(../app/views/Student/dashboard.php);
+require_once "../app/views/Student/dashboard.php";
 
 ?>
